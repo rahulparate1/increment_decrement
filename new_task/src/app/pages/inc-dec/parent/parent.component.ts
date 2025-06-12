@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
 
+  counter: number = 0;
+
+  updateCounter(newValue: number) {
+    this.counter = newValue;
+  }
+
 }

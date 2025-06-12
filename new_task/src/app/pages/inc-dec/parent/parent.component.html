@@ -1,1 +1,5 @@
-<p>parent works!</p>
+<div class="parent-container">
+  <h2>Parent Component</h2>
+  <app-child [count]="counter" (countChange)="updateCounter($event)"></app-child>
+  <p>Current Value in Parent: {{ counter }}</p>
+</div>
